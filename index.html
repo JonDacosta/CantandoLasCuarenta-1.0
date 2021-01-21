@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantando Las 40!</title>
+    <link rel="stylesheet" href="archivos/css/estilos.css">
+</head>
+<body>
+    
+    <header class="titulo">
+        <h1>Cantando las 40!</h1>
+    </header>
+
+    <div>
+        <div class="botones">
+            <button id="Empezar">Empezar Juego</button>
+            <button id="Sumar">Sumar Carta</button>
+            <button id="Detener">Detener</button>
+        </div>
+    </div>
+
+    <div>
+        <div class="contenedor">
+            <h1 class="nombreJugador" id="jugador1">Jugador 1 </h1>
+            <p class="puntuacion">Puntuación - <small>0</small></p>
+            <div class="jugador-cartas">
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="contenedor">
+            <h1 class="nombreMaquina" id="maquina1">Máquina</h1>
+            <p class="puntuacion">Puntuación - <small>0</small></p>
+            <div class="maquina-cartas">
+            
+            </div>
+        </div>
+    </div>
+    <!--importa la librería underscore de JS-->
+    <script src="archivos/js/underscore-min.js"></script>
+    <!--enlace al archivo javascript-->
+    <script src="archivos/js/juego.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</body>
+</html>

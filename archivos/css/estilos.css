@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5% /*Hago un reset para REMS - 62.5% = 10px de 16px para mejor resolución*/;
+}
+
+body {    margin: 0;
+    background-image: url(imagenes/Fondo-tapete.jpg);
+    background-position: top;
+    background-size: 100%;
+    font-size: 1.7rem;
+    }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'uno dos';
+}
+.nombreJugador, .nombreMaquina {
+    
+    display: inline-block;
+    grid-area: uno;
+}
+.puntuacion {
+    
+    display: inline-block;
+    font-size: 3rem;
+    grid-area: dos;
+    margin-right: 0.5rem;
+    color: rgb(255, 255, 255);
+    border-top: 0.3rem solid black;
+}
+
+/*Header en el body*/
+/*/////////////////*/
+.titulo {
+    text-align: center;
+    background-color: rgb(66, 53, 53);
+    color: cornsilk;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+/*Botones para las acciones de juego*/
+/*//////////////////////////////////*/
+.botones {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+
+#Empezar, #Sumar, #Detener {
+    padding: 0,5rem 1rem;
+    width: 14rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    font-style: italic;
+    background: rgb(224, 224, 226);
+    border-radius: 10rem;
+    border: 0.1rem solid #030101;
+    box-shadow: 0.1rem 0,4rem 0,1rem rgba(0, 0, 0, 0);
+    margin: 0 auto;
+}
+#Empezar {
+    background-color: skyblue;
+}
+#Sumar {
+    width: 20rem;
+    height: 9rem;
+    font-size: 3rem;
+    border-radius: 10rem;
+    border:0.1rem solid black;
+    background-color: rgb(84, 189, 84);
+    
+}
+#Empezar:hover, #Sumar:hover, #Detener:hover {
+    color: red;
+}
+
+/*CARTAS*/
+.carta {
+    position: relative;
+    width: 12rem;
+    left: 10rem;
+    margin-left: -7.5rem;
+    
+}
+#jugador1, #maquina1 {
+    grid-area: uno;
+    color: white;
+    
+    margin-left: 2rem;
+}
+.jugador-cartas, .maquina-cartas {
+    
+    color: white;
+    height: 20rem;
+}
+
