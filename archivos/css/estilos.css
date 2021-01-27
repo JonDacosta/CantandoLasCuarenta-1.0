@@ -53,6 +53,7 @@ img {
 .botones {
     text-align: center;
     margin-top: 0.5rem;
+    
 }
 
 
@@ -104,3 +105,32 @@ img {
     height: 20rem;
 }
 
+@media (max-width: 480px) {
+    #Empezar, #Sumar, #Detener {
+        padding: 0,5rem 1rem;
+        width: 10rem;
+        height: 5rem;
+        font-size: 1.7rem;
+        font-style: italic;
+        background: rgb(224, 224, 226);
+        border-radius: 10rem;
+        border: 0.1rem solid #030101;
+        box-shadow: 0.1rem 0,4rem 0,1rem rgba(0, 0, 0, 0);
+        margin: 0 auto;
+    }
+    #Sumar {
+        width: 12rem;
+        height: 9rem;
+        font-size: 3rem;
+        border-radius: 10rem;
+        border:0.1rem solid black;
+        background-color: rgb(84, 189, 84);
+        
+    }
+    .botones {
+        text-align: center;
+        margin-top: 0.7rem;
+        display: flex;
+        
+    }
+  }
